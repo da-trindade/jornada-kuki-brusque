@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Jornada de Kuki por Brusque</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="tela-inicial" id="tela-inicial">
+
+      <div class="lado-esquerdo">
+        <img src="images/kuki/kuki.png" alt="Kuki">
+      </div>
+
+      <div class="lado-direito">
+
+        <h1>A Jornada de Kuki por Brusque</h1>
+
+        <input type="text" placeholder="Seu nome">
+
+        <input type="text" placeholder="Sua escola">
+
+        <input type="number" placeholder="Sua idade">
+
+        <button id="botao-comecar">Começar</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="tela-pergunta" id="tela-pergunta1">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            Kuki acordou e viu muitos animais e árvores ao seu redor.
+            Em que lugar de Brusque ele está?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao">
+            <img src="images/perguntas/pergunta01-a.png" alt="Escola">
+        </button>
+
+        <button class="opcao" onclick="proximaPergunta()">
+            <img src="images/perguntas/pergunta01-b.png" alt="Parque Zoobotânico">
+        </button>
+
+        <button class="opcao">
+            <img src="images/perguntas/pergunta01-c.png" alt="Praça">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta2">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-feliz.png" alt="Kuki feliz">
+
+        <h2>
+            Passeando pelo local, Kuki viu vários bichinhos 
+            diferentes. O que ele pode encontrar no 
+            Parque Zoobotânico?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao">
+            <img src="images/perguntas/Pergunta02-a.png">
+        </button>
+
+        <button class="opcao">
+            <img src="images/perguntas/Pergunta02-b.png">
+        </button>
+
+        <button class="opcao">
+            <img src="images/perguntas/Pergunta02-c.png">
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
