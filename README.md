@@ -38,3 +38,8 @@ O personagem principal é Kuki, um marreco que guia as crianças em uma jornada 
  ├── README.md
  ├── 📁 images
  └── 📁 audio
+ ---
+
+## Integrantes
+
+- Daniel da Trindade
