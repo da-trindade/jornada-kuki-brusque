@@ -30,15 +30,16 @@ O personagem principal é Kuki, um marreco que guia as crianças em uma jornada 
 
 ## Estrutura do Projeto
 
-```plaintext
-📁 jornada-kuki-brusque
- ├── index.html
- ├── style.css
- ├── script.js
- ├── README.md
- ├── 📁 images
- └── 📁 audio
- 
+```bash
+jornada-kuki-brusque
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── images
+└── audio
+```
+
 ---
 
 ## Integrantes
