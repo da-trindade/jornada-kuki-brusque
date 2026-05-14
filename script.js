@@ -2,30 +2,42 @@ const botaoComecar = document.getElementById("botao-comecar");
 
 const telaInicial = document.getElementById("tela-inicial");
 
-const pergunta1 = document.getElementById("tela-pergunta1");
-
-const pergunta2 = document.getElementById("pergunta2");
-
-
-// ESCONDE A PERGUNTA 2
-pergunta2.style.display = "none";
-
-
-// BOTÃO COMEÇAR
 botaoComecar.addEventListener("click", function(){
 
     telaInicial.style.display = "none";
 
-    pergunta1.style.display = "flex";
+    document.getElementById("pergunta1").style.display = "flex";
 
 });
 
+function verificarResposta(correta, numeroPergunta){
 
-// IR PARA PERGUNTA 2
-function proximaPergunta(){
+    if(correta){
 
-    pergunta1.style.display = "none";
+        alert("MUITO BEM! KUKI FICOU FELIZ!");
 
-    pergunta2.style.display = "flex";
+        document.getElementById("pergunta" + numeroPergunta).style.display = "none";
+
+        if(numeroPergunta == 15){
+
+            document.getElementById("tela-final").style.display = "flex";
+
+        } else {
+
+            document.getElementById("pergunta" + (numeroPergunta + 1)).style.display = "flex";
+
+        }
+
+    } else {
+
+        alert("OPS! TENTE NOVAMENTE!");
+
+    }
+
+}
+
+function reiniciarJogo(){
+
+    location.reload();
 
 }

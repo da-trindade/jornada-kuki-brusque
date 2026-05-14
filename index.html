@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Jornada de Kuki por Brusque</title>
+  <title>A JORNADA DE KUKI POR BRUSQUE</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,15 +20,18 @@
 
       <div class="lado-direito">
 
-        <h1>A Jornada de Kuki por Brusque</h1>
+        <h1>
+            A JORNADA DE KUKI <br>
+            POR BRUSQUE
+        </h1>
 
-        <input type="text" placeholder="Seu nome">
+        <input type="text" placeholder="SEU NOME">
 
-        <input type="text" placeholder="Sua escola">
+        <input type="text" placeholder="SUA ESCOLA">
 
-        <input type="number" placeholder="Sua idade">
+        <input type="number" placeholder="SUA IDADE">
 
-        <button id="botao-comecar">Começar</button>
+        <button id="botao-comecar">COMEÇAR</button>
 
       </div>
 
@@ -36,31 +39,31 @@
 
   </div>
 
-  <div class="tela-pergunta" id="tela-pergunta1">
+  <div class="tela-pergunta" id="pergunta1">
 
     <div class="topo-pergunta">
 
         <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
 
         <h2>
-            Kuki acordou e viu muitos animais e árvores ao seu redor.
-            Em que lugar de Brusque ele está?
+            KUKI ACORDOU E VIU MUITOS ANIMAIS E ÁRVORES AO SEU 
+            REDOR. EM QUE LUGAR DE BRUSQUE ELE ESTÁ?
         </h2>
 
     </div>
 
     <div class="opcoes">
 
-        <button class="opcao">
-            <img src="images/perguntas/pergunta01-a.png" alt="Escola">
+        <button class="opcao" onclick="verificarResposta(false, 1)">
+            <img src="images/perguntas/Pergunta01-a.png" alt="Escola">
         </button>
 
-        <button class="opcao" onclick="proximaPergunta()">
-            <img src="images/perguntas/pergunta01-b.png" alt="Parque Zoobotânico">
+        <button class="opcao" onclick="verificarResposta(true, 1)">
+            <img src="images/perguntas/Pergunta01-b.png" alt="Parque Zoobotânico">
         </button>
 
-        <button class="opcao">
-            <img src="images/perguntas/pergunta01-c.png" alt="Praça">
+        <button class="opcao" onclick="verificarResposta(false, 1)">
+            <img src="images/perguntas/Pergunta01-c.png" alt="Praça">
         </button>
 
     </div>
@@ -71,31 +74,451 @@
 
     <div class="topo-pergunta">
 
-        <img src="images/kuki/kuki-feliz.png" alt="Kuki feliz">
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
 
         <h2>
-            Passeando pelo local, Kuki viu vários bichinhos 
-            diferentes. O que ele pode encontrar no 
-            Parque Zoobotânico?
+            PASSEANDO PELO LOCAL, KUKI VIU VÁRIOS BICHINHOS 
+            DIFERENTES. O QUE ELE PODE ENCONTRAR NO PARQUE 
+            ZOOBOTÂNICO?
         </h2>
 
     </div>
 
     <div class="opcoes">
 
-        <button class="opcao">
+        <button class="opcao" onclick="verificarResposta(true, 2)">
             <img src="images/perguntas/Pergunta02-a.png">
         </button>
 
-        <button class="opcao">
+        <button class="opcao" onclick="verificarResposta(false, 2)">
             <img src="images/perguntas/Pergunta02-b.png">
         </button>
 
-        <button class="opcao">
+        <button class="opcao" onclick="verificarResposta(false, 2)">
             <img src="images/perguntas/Pergunta02-c.png">
         </button>
 
     </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta3">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI SUBIU UM MORRO E VIU UMA IGREJA BEM BONITA. 
+            QUE LUGAR FAMOSO DE BRUSQUE É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 3)">
+            <img src="images/perguntas/Pergunta03-a.png" alt="Mercado">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 3)">
+            <img src="images/perguntas/Pergunta03-b.png" alt="Praça">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 3)">
+            <img src="images/perguntas/Pergunta03-c.png" alt="Santuário de Azambuja">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta4">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            DEPOIS DE DESCER O MORRO, KUKI ENTROU EM UMA CASA 
+            CHEIA DE OBJETOS ANTIGOS E HISTÓRIAS. QUE LUGAR 
+            É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 4)">
+            <img src="images/perguntas/Pergunta04-a.png" alt="Escola">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 4)">
+            <img src="images/perguntas/Pergunta04-b.png" alt="Loja">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 4)">
+            <img src="images/perguntas/Pergunta04-c.png" alt="Museu Casa de Brusque">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta5">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            CONTINUANDO SEU PASSEIO, KUKI ENCONTROU UM PARQUE COM ESCULTURAS 
+            GRANDES. QUE LUGAR DE BRUSQUE É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 5)">
+            <img src="images/perguntas/Pergunta05-a.png" alt="Estacionamento">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 5)">
+            <img src="images/perguntas/Pergunta05-b.png" alt="Parque das Esculturas Ilse Teske">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 5)">
+            <img src="images/perguntas/Pergunta05-c.png" alt="Praça">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta6">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI OUVIU UMA MÚSICA BEM BONITA VINDO DA CIDADE. QUAL DESSES 
+            OBJETOS FAZ MÚSICA?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 6)">
+            <img src="images/perguntas/Pergunta06-a.png" alt="Bola">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 6)">
+            <img src="images/perguntas/Pergunta06-b.png" alt="Cadeira">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 6)">
+            <img src="images/perguntas/Pergunta06-c.png" alt="Violino">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta7">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            SEGUINDO O SOM, KUKI ENCONTROU UMA FESTA CHEIA DE MÚSICA E ALEGRIA. 
+            QUE FESTA FAMOSA DE BRUSQUE É ESSA?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 7)">
+            <img src="images/perguntas/Pergunta07-a.png" alt="Carnaval">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 7)">
+            <img src="images/perguntas/Pergunta07-b.png" alt="Fenarreco">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 7)">
+            <img src="images/perguntas/Pergunta07-c.png" alt="Festa Junina">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta8">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            NA FENARRECO, KUKI SENTIU UM CHEIRO DELICIOSO DE COMIDA. QUAL 
+            COMIDA TÍPICA ELE ENCONTROU?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 8)">
+            <img src="images/perguntas/Pergunta08-a.png" alt="Hambúrguer">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 8)">
+            <img src="images/perguntas/Pergunta08-b.png" alt="Marreco">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 8)">
+            <img src="images/perguntas/Pergunta08-c.png" alt="Pizza">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta9">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI SENTIU UM CHEIRINHO DOCE NO AR. QUAL DOCE FAMOSO DE BRUSQUE 
+            É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(true, 9)">
+            <img src="images/perguntas/Pergunta09-a.png" alt="Cuca">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 9)">
+            <img src="images/perguntas/Pergunta09-b.png" alt="Rosquinha">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 9)">
+            <img src="images/perguntas/Pergunta09-c.png" alt="Sorvete">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta10">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI DESCOBRIU QUE ESSE DOCE É TÃO ESPECIAL QUE TEM UMA FESTA SÓ 
+            PARA ELE. QUAL É O NOME DESSA FESTA?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(true, 10)">
+            <img src="images/perguntas/Pergunta10-a.png" alt="Festival Nacional da Cuca">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 10)">
+            <img src="images/perguntas/Pergunta10-b.png" alt="Festival do Chocolate">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 10)">
+            <img src="images/perguntas/Pergunta10-c.png" alt="Festival do Sorvete">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta11">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI ENCONTROU UMA FOTO ANTIGA DE PESSOAS CHEGANDO EM 
+            BRUSQUE. QUEM SÃO ESSAS PESSOAS QUE VIERAM MORAR NA
+            CIDADE HÁ MUITO TEMPO?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 11)">
+            <img src="images/perguntas/Pergunta11-a.png" alt="Astronautas">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 11)">
+            <img src="images/perguntas/Pergunta11-b.png" alt="Imigrantes">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 11)">
+            <img src="images/perguntas/Pergunta11-c.png" alt="Piratas">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta12">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI DESCOBRIU QUE MUITOS IMIGRANTES VIERAM DE OUTRO PAÍS. 
+            QUE PAÍS É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(true, 12)">
+            <img src="images/perguntas/Pergunta12-a.png" alt="Alemanha">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 12)">
+            <img src="images/perguntas/Pergunta12-b.png" alt="Argentina">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 12)">
+            <img src="images/perguntas/Pergunta12-c.png" alt="Japão">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta13">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            PASSEANDO PELA CIDADE, KUKI VIU MUITAS LOJAS CHEIAS DE ROUPAS. 
+            QUE LUGAR DE BRUSQUE TEM MUITAS ROUPAS PARA VENDER?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 13)">
+            <img src="images/perguntas/Pergunta13-a.png" alt="Farmácia">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 13)">
+            <img src="images/perguntas/Pergunta13-b.png" alt="FIP (Feira da Moda)">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 13)">
+            <img src="images/perguntas/Pergunta13-c.png" alt="Mercado">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta14">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            KUKI VIU CARROS PASSANDO NA LAMA E FAZENDO UMA GRANDE AVENTURA. 
+            QUE EVENTO DE BRUSQUE É ESSE?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(false, 14)">
+            <img src="images/perguntas/Pergunta14-a.png" alt="Corrida de bicicleta">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 14)">
+            <img src="images/perguntas/Pergunta14-b.png" alt="Desfile">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(true, 14)">
+            <img src="images/perguntas/Pergunta14-c.png" alt="FenaJeep">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-pergunta" id="pergunta15">
+
+    <div class="topo-pergunta">
+
+        <img src="images/kuki/kuki-pensando.png" alt="Kuki pensando">
+
+        <h2>
+            DEPOIS DE CONHECER TANTOS LUGARES, KUKI CHEGOU EM CASA! 
+            ONDE É A CASA DO KUKI?
+        </h2>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao" onclick="verificarResposta(true, 15)">
+            <img src="images/perguntas/Pergunta15-a.png" alt="Brusque">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 15)">
+            <img src="images/perguntas/Pergunta15-b.png" alt="Na Lua">
+        </button>
+
+        <button class="opcao" onclick="verificarResposta(false, 15)">
+            <img src="images/perguntas/Pergunta15-c.png" alt="No mar">
+        </button>
+
+    </div>
+
+</div>
+
+<div class="tela-final" id="tela-final">
+
+    <img src="images/kuki/kuki-feliz.png" alt="Kuki feliz">
+
+    <h2>
+        PARABÉNS! <br>
+        VOCÊ CONCLUIU A JORNADA DE KUKI POR BRUSQUE!
+    </h2>
+
+    <button onclick="reiniciarJogo()">
+        JOGAR NOVAMENTE
+    </button>
 
 </div>
 
